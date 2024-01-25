@@ -42,6 +42,19 @@ img{
     gap: 2rem;
 }
 
+.container{
+    margin: 10% 20%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card{
+    max-height: 50%;
+    max-width: 30%;
+    margin-bottom: 2rem;
+}
+
 
 /* #endregion */
 
@@ -60,6 +73,8 @@ header{
 /* #region main */
 
 /* #region banner */
+
+
 
 .banner{
     display: flex;
@@ -95,6 +110,14 @@ header{
     width: 100vh;
     margin-left: -2rem;
     margin-bottom: -2rem;
+}
+
+/* #endregion */
+
+/* #region bussiness-plan */
+
+.card-price{
+    flex-basis: 33%;
 }
 
 /* #endregion */
