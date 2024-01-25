@@ -166,6 +166,18 @@ object-fit: contain;
 
 /* #endregion */
 
+/* #region faq */
+
+.faq>.container{
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.container>hr{
+    flex-basis: 100%;
+}
+
+/* #endregion */
 
 /* #endregion */
 
