@@ -1,9 +1,86 @@
 
+/* #region debug */
+
+.debug{
+
+}
+
+/* #endregion */
+
 
 :root{
-
+    --bool-banner-bg-color: rgb(88, 88, 231);
 }
 
+/* #region common */
 *{
     margin: 0;
+    border: 1px solid black;
 }
+
+a{
+    display: block;
+    text-decoration: none;
+}
+
+svg{
+    display: block;
+}
+
+/* #endregion */
+
+/* #region utility */
+
+.centering{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+/* #endregion */
+
+/* #region header */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    height: 2rem;
+}
+
+/* #endregion */
+
+/* #region main */
+
+/* #region banner */
+
+.banner{
+    display: flex;
+    flex-flow: wrap;
+    background-color: var(--bool-banner-bg-color);
+}
+
+.banner-title{
+    text-align: center;
+    font-size: xx-large;
+    width: 100%;
+}
+
+.banner-text{
+    
+    
+}
+
+.banner-img{
+    width: 50vh;
+}
+
+/* #endregion */
+
+/* #endregion */
+
+/* #region footer */
+
+/* #endregion */
