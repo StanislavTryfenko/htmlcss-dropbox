@@ -1,13 +1,4 @@
 
-/* #region debug */
-
-.debug{
-
-}
-
-/* #endregion */
-
-
 :root{
     --bool-banner-bg-color: rgb(88, 88, 231);
 }
@@ -29,6 +20,10 @@ svg{
 
 img{
     width: 100%;
+}
+
+ul{
+    list-style: none;
 }
 
 /* #endregion */
@@ -182,6 +177,34 @@ object-fit: contain;
 /* #endregion */
 
 /* #region footer */
+
+footer {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(194, 24, 24);
+}
+
+.footer-top {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: start;
+    margin: 3rem 0 1rem;
+    color: white;
+}
+
+.footer-bottom{
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+    border-top: white 1px solid;
+}
+
+.footer-bottom>hr{
+    width: 4rem;
+}
 
 /* #endregion */
 
