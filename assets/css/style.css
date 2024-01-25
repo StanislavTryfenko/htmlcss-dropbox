@@ -55,6 +55,9 @@ img{
     margin-bottom: 2rem;
 }
 
+.section-title{
+    flex-basis: 100%;
+}
 
 /* #endregion */
 
@@ -116,7 +119,7 @@ header{
 
 /* #region bussiness-plan */
 
-.card-price{
+.card{
     flex-basis: 33%;
 }
 
