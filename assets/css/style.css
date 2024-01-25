@@ -27,6 +27,10 @@ svg{
     display: block;
 }
 
+img{
+    width: 100%;
+}
+
 /* #endregion */
 
 /* #region utility */
@@ -37,6 +41,7 @@ svg{
     align-items: center;
     gap: 2rem;
 }
+
 
 /* #endregion */
 
@@ -66,15 +71,30 @@ header{
     text-align: center;
     font-size: xx-large;
     width: 100%;
+    padding: 5vh;
+}
+
+.banner-text-box{
+    display: flex;
+    align-items: left;
+    flex-wrap: column wrap;
+    justify-content: space-evenly;
+    
 }
 
 .banner-text{
-    
+
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     
 }
 
 .banner-img{
-    width: 50vh;
+    width: 100vh;
+    margin-left: -2rem;
+    margin-bottom: -2rem;
 }
 
 /* #endregion */
