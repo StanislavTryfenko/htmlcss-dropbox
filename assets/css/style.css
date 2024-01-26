@@ -1,6 +1,18 @@
 
 :root{
-    --bool-banner-bg-color: rgb(88, 88, 231);
+    --bool-color-bg-main: rgba(255, 255, 255, 1);
+    --bool-color-txt-light:rgba(245, 245, 245, 1);
+    --bool-color-bg-bix-box: grey;
+    --bool-color-bg-footer: black;
+    --bool-color-bg-banner: rgba(180, 208, 231, 1);
+    --bool-color-btn: rgba(0, 97, 255, 1);
+    --bool-color-square-world: rgba(213, 0, 31, 1);
+    --bool-color-square-topps: rgba(255, 28, 28, 1);
+    --bool-color-square-asuk: rgba(97, 8, 43, 1);
+    --bool-color-square-lonely: rgba(13, 36, 129, 1);
+    --bool-color-square-uf: rgba(0, 147, 206, 1);
+    --bool-color-square-clear: rgba(255, 216, 48, 1);
+    --bool-color-square-designit: rgba(162, 211, 155, 1);
 }
 
 /* #region common */
@@ -26,6 +38,18 @@ ul{
     list-style: none;
 }
 
+button{
+    background-color: var(--bool-color-btn);
+    color: var(--bool-color-txt-light);
+    padding: 1rem;
+    border: 0;
+
+}
+
+h1{
+    font-size: 5.8rem;
+}
+
 /* #endregion */
 
 /* #region utility */
@@ -35,10 +59,20 @@ ul{
     justify-content: center;
     align-items: center;
     gap: 2rem;
+    & img{
+        width: auto;
+    }
 }
 
 .container{
     margin: 10% 20%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.container-big{
+    margin: 5% 10% 0 5%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -75,42 +109,29 @@ header{
 
 /* #region banner */
 
-
-
 .banner{
     display: flex;
     flex-flow: wrap;
-    background-color: var(--bool-banner-bg-color);
-}
-
-.banner-title{
-    text-align: center;
-    font-size: xx-large;
-    width: 100%;
-    padding: 5vh;
+    background-color: var(--bool-color-bg-banner);
 }
 
 .banner-text-box{
     display: flex;
-    align-items: left;
-    flex-wrap: column wrap;
-    justify-content: space-evenly;
-    
+    padding-top: 2rem;
 }
 
 .banner-text{
-
-    height: 75%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    
+    gap: 2rem;
+    flex-basis: calc(100% / 12 * 3);
 }
 
 .banner-img{
-    width: 100vh;
+    width: 20vh;
     margin-left: -2rem;
     margin-bottom: -2rem;
+    flex-basis: calc(100% / 12 * 9);
 }
 
 /* #endregion */
@@ -208,10 +229,3 @@ footer {
 
 /* #endregion */
 
-
-
-/* #region random testing (just ignore) */
-
-
-
-/* #endregion */
