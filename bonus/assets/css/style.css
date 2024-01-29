@@ -482,8 +482,6 @@ button:hover{
 }
 
 
-
-
 .hidden:hover .tendina{
     display: block
 }
@@ -491,7 +489,26 @@ button:hover{
 .tendina{
     display: none;
     position: absolute;
-    top: 6rem;
+    top: 5.5rem;
+    background-color: var(--bool-color-bg-main);
+    & ul{
+        & li {
+            border: 1px solid var(--bool-color-bg-bix-box);
+            padding: 0.25rem 0.5rem 0.25rem 0.1rem;
+        } 
+    }
+}
+
+
+.domanda:hover .risposta{
+    display: block;
+}
+
+
+
+.risposta{
+    display: none;  
+    padding-top: 1rem;
 }
 
 /* #region buongusto */
